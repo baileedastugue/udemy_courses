@@ -1,4 +1,4 @@
-/* line 8, sass/main.scss */
+/* line 9, sass/main.scss */
 *,
 *::after,
 *::before {
@@ -6,11 +6,11 @@
   padding: 0;
   box-sizing: inherit; }
 
-/* line 16, sass/main.scss */
+/* line 17, sass/main.scss */
 html {
   font-size: 62.5%; }
 
-/* line 20, sass/main.scss */
+/* line 21, sass/main.scss */
 body {
   padding: 3rem;
   font-family: "Lato", sans-serif;
@@ -20,7 +20,7 @@ body {
   color: #777;
   box-sizing: border-box; }
 
-/* line 30, sass/main.scss */
+/* line 31, sass/main.scss */
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
@@ -28,24 +28,21 @@ body {
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   position: relative; }
-
-/* line 44, sass/main.scss */
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem; }
-
-/* line 50, sass/main.scss */
-.header__logo {
-  height: 3.5rem; }
-
-/* line 54, sass/main.scss */
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
+  /* line 43, sass/main.scss */
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  /* line 49, sass/main.scss */
+  .header__logo {
+    height: 3.5rem; }
+  /* line 53, sass/main.scss */
+  .header__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 /* line 62, sass/main.scss */
 .heading-primary {
@@ -53,27 +50,25 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
-
-/* line 69, sass/main.scss */
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
-
-/* line 79, sass/main.scss */
-.heading-primary--sub {
-  color: #fff;
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.74rem;
-  animation-name: moveInRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out; }
+  /* line 67, sass/main.scss */
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
+  /* line 76, sass/main.scss */
+  .heading-primary--sub {
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.74rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out; }
 
 @keyframes moveInLeft {
   0% {
@@ -103,9 +98,8 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
-/* line 135, sass/main.scss */
-.btn:link,
-.btn:visited {
+/* line 133, sass/main.scss */
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -114,20 +108,27 @@ body {
   transition: all .2s;
   position: relative; }
 
-/* line 146, sass/main.scss */
+/* line 142, sass/main.scss */
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  /* line 145, sass/main.scss */
+  .btn:hover::after {
+    transform: scaleX(1.1);
+    opacity: 0; }
 
-/* line 151, sass/main.scss */
+/* line 150, sass/main.scss */
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-/* line 156, sass/main.scss */
+/* line 154, sass/main.scss */
 .btn--white {
   background-color: #fff;
   color: #777; }
+  /* line 157, sass/main.scss */
+  .btn--white::after {
+    background-color: #fff; }
 
 /* line 161, sass/main.scss */
 .btn::after {
@@ -142,16 +143,7 @@ body {
   z-index: -1;
   transition: all 1s; }
 
-/* line 174, sass/main.scss */
-.btn-white::after {
-  background-color: #fff; }
-
-/* line 178, sass/main.scss */
-.btn:hover::after {
-  transform: scaleX(1.1);
-  opacity: 0; }
-
-/* line 183, sass/main.scss */
+/* line 173, sass/main.scss */
 .btn--animated {
   animation: moveInBottom 1s ease-out .5s;
   animation-fill-mode: backwards; }
