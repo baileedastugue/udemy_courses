@@ -19,6 +19,8 @@ Oh we are learning, oh boy we are learning!
 | Advanced React and Redux | 0% |
 | GraphQL with React: The Complete Developers Guide | 0% |
 | Java Programming Masterclass for Software Developers | 0% |
+
+aka courses I bought during a Udemy sale / in a state of euphoria during said Udemy sale.
 ---
 
 One repo to house all my learning - perhaps I will actually update these percentages as I go? Who is to say.
