@@ -1,32 +1,15 @@
-// const person: {
-//   name: string;
-//   age: number;
-//   hobbies: string[];
-//   role: [number, string];
-// } = {
-//   name: 'Bailee',
-//   age: 26,
-//   hobbies: ['Coding', 'Baking'],
-//   role: [2, 'author']
-// };
+let userInput: unknown;
+let userName: string;
 
-const person = {
-  name: 'Bailee',
-  age: 26,
-  hobbies: ['Coding', 'Baking'],
-  role: 2
-};
-
-// person.role.push('admin');
-// person.role[1] = 10;
-
-let favoriteHobbies: any[];
-favoriteHobbies = ['Sports'];
-
-// console.log(person.nickname);
-
-for (const hobby of person.hobbies) {
-  console.log(hobby.toUpperCase());
-  // console.log(hobby.map()) // we get an error!!!
-  // oh man I love this
+userInput = 5;
+userInput = 'Bailee';
+if (typeof userInput === 'string') {
+  userName = userInput;
 }
+
+function generateError (message: string, code: number) {
+  throw {message: message, errorCode: code};
+}
+
+generateError('An error occurred', 500);
+
