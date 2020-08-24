@@ -3,7 +3,7 @@ Oh we are learning, oh boy we are learning!
 ## Currently
 | Course | Progress |
 | ------ | -------- |
-| Understanding TypeScript - 2020 Edition | 20% |
+| Understanding TypeScript - 2020 Edition | 25% |
 | Advanced CSS and Sass: Flexbox, Grid, Animations and More! | 27% |
 | JavaScript: the Advanced Concepts | 5% |
 ---

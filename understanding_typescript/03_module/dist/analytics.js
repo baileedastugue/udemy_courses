@@ -1,0 +1,9 @@
+// console.log('Oh we analyzing');
+let logged;
+function sendAnalytics(data) {
+    console.log(data);
+    logged = true;
+    console.log(logged);
+}
+sendAnalytics('The data');
+//# sourceMappingURL=analytics.js.map
