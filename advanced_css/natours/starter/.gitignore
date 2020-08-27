@@ -1,1 +1,4 @@
 node_modules/
+
+#  to run live-server without node_modules constantly updating things
+# // live-server --no-browser --ignore=node_modules/
