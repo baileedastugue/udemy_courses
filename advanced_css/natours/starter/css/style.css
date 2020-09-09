@@ -94,13 +94,34 @@ h2.heading-secondary {
     transform: skewY(2deg) skewX(5deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
+/* line 55, sass/base/_typography.scss */
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 61, sass/base/_typography.scss */
+.paragraph {
+  font-size: 1.6rem; }
+  /* line 63, sass/base/_typography.scss */
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
 /* line 1, sass/base/_utilities.scss */
 .u-center-text {
   text-align: center; }
 
 /* line 5, sass/base/_utilities.scss */
-.u-margin-bottom-8 {
+.u-margin-bottom-big {
   margin-bottom: 8rem; }
+
+/* line 9, sass/base/_utilities.scss */
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+/* line 13, sass/base/_utilities.scss */
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem; }
 
 /* line 2, sass/components/_button.scss */
 .btn:link, .btn:visited {
@@ -110,31 +131,32 @@ h2.heading-secondary {
   display: inline-block;
   border-radius: 10rem;
   transition: all .2s;
-  position: relative; }
+  position: relative;
+  font-size: 1.6rem; }
 
-/* line 11, sass/components/_button.scss */
+/* line 12, sass/components/_button.scss */
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
-  /* line 14, sass/components/_button.scss */
+  /* line 15, sass/components/_button.scss */
   .btn:hover::after {
     transform: scaleX(1.1);
     opacity: 0; }
 
-/* line 19, sass/components/_button.scss */
+/* line 20, sass/components/_button.scss */
 .btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-/* line 23, sass/components/_button.scss */
+/* line 24, sass/components/_button.scss */
 .btn--white {
   background-color: #fff;
   color: #777; }
-  /* line 26, sass/components/_button.scss */
+  /* line 27, sass/components/_button.scss */
   .btn--white::after {
     background-color: #fff; }
 
-/* line 30, sass/components/_button.scss */
+/* line 31, sass/components/_button.scss */
 .btn::after {
   content: "";
   display: inline-block;
@@ -147,10 +169,32 @@ h2.heading-secondary {
   z-index: -1;
   transition: all 1s; }
 
-/* line 42, sass/components/_button.scss */
+/* line 43, sass/components/_button.scss */
 .btn--animated {
   animation: moveInBottom 1s ease-out .5s;
   animation-fill-mode: backwards; }
+
+/* line 50, sass/components/_button.scss */
+.btn-text:link, .btn-text:visited {
+  font-size: 1.6rem;
+  color: #55c57a;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid #55c57a;
+  padding: 3px;
+  transition: all .2s; }
+
+/* line 61, sass/components/_button.scss */
+.btn-text:hover {
+  background-color: #55c57a;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px); }
+
+/* line 68, sass/components/_button.scss */
+.btn-text:active {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(0); }
 
 /* line 1, sass/layout/_header.scss */
 .header {
