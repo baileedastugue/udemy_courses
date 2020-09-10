@@ -12,7 +12,7 @@ const a = function () {
      b();
 };
 
-// a();
+a();
 
 // const obj = {
 //      name: 'Bailee',
@@ -61,4 +61,4 @@ const obj = {
      },
 };
 
-obj.sing();
+// obj.sing();
